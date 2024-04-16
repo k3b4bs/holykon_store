@@ -1,0 +1,750 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Шрифты */
+@font-face {
+    font-family: 'Montserrat';
+    src: url("fonts/Montserrat-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("fonts/Montserrat-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("fonts/Montserrat-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("fonts/Montserrat-Bold.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("fonts/Montserrat-SemiBold.ttf");
+    font-weight: 550;
+}
+/* Стили для экранов меньше 720 px */
+@media (max-width: 720px){
+    .wrapper{
+        width: 656px;
+        margin: 0 auto;
+    }
+    body{
+        background-color:  #F9F9F9;
+    }
+    header{
+        background-color: #FFF;
+    }
+    .head{
+        width: 656px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 13px 0;
+        font-family: Montserrat;
+        font-weight: 400;
+    }
+    .logo{
+        font-family: Montserrat;
+        font-weight: 550;
+        font-size: 28px;
+    }
+    header ul{
+        display: flex;
+        gap: 70px;
+    }
+    header ul li{
+        list-style-type: none;
+    }
+    header ul li a{
+        transition: 0.2s;
+    }
+    header ul li a:hover{
+        color: rgb(255, 89, 18);
+    }
+    header a{
+        text-decoration: none;
+        color: black;
+    }
+    .r_header{
+        display: flex;
+        gap: 12px;
+    }
+    .burger_menu{
+        background-image: url("img/burger.png");
+        width: 26px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* Главный экран */
+    .sec1{
+        background-image: url("img/background.png");
+        background-position: 50%;
+        width: 100%;
+        height: 1018px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    
+        display: flex;
+        align-items: center;
+    }
+    h1{
+        font-family: montserrat;
+        font-size: 42px;
+        font-weight: 550;
+        width: 656px;
+        color: #FFF;
+    }
+    .tittles p{
+        font-family: montserrat;
+        font-size: 26px;
+        font-weight: 400;
+        width: 656px;
+        color: #FFF;
+        line-height: 134%;
+        margin-top: 13px;
+    }
+    .tittles{
+        width: 656px;
+        margin: 0 auto;
+    }
+    .planka{
+        background-color: #FFF;
+        padding: 30px;
+    }
+    .planka_inside{
+        width: 656px;
+        margin: 0 auto;
+        display:  flex;
+        justify-content: space-between;
+    }
+    .planka_inside .text{
+        width: 250px;
+        font-family: montserrat;
+        font-size: 18px;
+        font-weight: 300;
+        color: #717171;
+    }
+    /* Класс для скрытия объектов */
+    .spec_mob{
+        display: none;
+    }
+    /* Группы товаров */
+    .tovars{
+        width: 656px;
+        margin: 0 auto;
+    }
+    h2{
+        font-family: montserrat;
+        font-size: 30px;
+        font-weight: 400;
+        margin-top: 60px;
+    }
+    .cont_items{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+    .item{
+        padding: 30px;
+        background-color: #FFF;
+        border-radius: 10px;
+        transition: 0.4s;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+    .item:hover{
+        -webkit-box-shadow: 6px 6px 42px -14px rgba(0, 0, 0, 0.26);
+        -moz-box-shadow: 6px 6px 42px -14px rgba(0, 0, 0, 0.26);
+        box-shadow: 6px 6px 42px -14px rgba(0, 0, 0, 0.26);
+        color: rgb(255, 89, 18);
+    }
+    .img_item{
+        background-image: url("img/item1.png");
+        width: 262px;
+        height: 280px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+    }
+    .tittle_item{
+        font-family: montserrat;
+        font-size: 19px;
+        font-weight: 550;
+        margin-top: 18px;
+        text-transform: uppercase;
+        width: 243px;
+        color: #000 !important;
+    }
+    .price_item{
+        font-family: montserrat;
+        font-size: 20px;
+        font-weight: 550;
+        margin-top: 16px;
+        width: 243px;
+    }
+    .slide_buttons button{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: 1px solid #717171;
+        background-color: #FFF;
+        cursor: pointer;
+    }
+    .top, .bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+    .brand{
+        background-image: url("img/tnf.png");
+        width: 300px;
+        height: 137px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 60px;
+    }
+    /* Текст внизу */
+    .bottom_text{
+        margin-top: 65px;
+    }
+    .bottom_text .text{
+        font-family: montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 156%;
+        color: #717171;
+        margin-bottom: 40px;
+    }
+    /* Футер */
+    .footer_cont{
+        width: 656px;
+        margin: 0 auto;
+        padding: 40px 0 10px 0;
+    }
+    .block_footer{
+        margin-bottom: 40px;
+    }
+    .block_footer ul li{
+        list-style: none;
+        margin-bottom: 12px;
+    }
+    .block_footer a{
+        color: #000;
+        font-family: montserrat;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    footer{
+        margin-top: 60px;
+        background-color: #FFF;
+    }
+    .center a{
+        text-decoration: none;
+    }
+}
+/* Стили для экранов меньше 1280px */
+@media screen and (min-width: 720px) and (max-width: 1280px) {
+    .wrapper{
+        width: 960px;
+        margin: 0 auto;
+    }
+    body{
+        background-color: #F9F9F9;
+    }
+    .fav{
+        background-image: url("img/fav.png");
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .cart{
+        background-image: url("img/bag.png");
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .profile{
+        background-image: url("img/profile.png");
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    header{
+        background-color: #FFF;
+    }
+    .head{
+        width: 960px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        font-family: Montserrat;
+        font-weight: 400;
+    }
+    .logo{
+        font-family: Montserrat;
+        font-weight: 550;
+        font-size: 20px;
+    }
+    header ul{
+        display: flex;
+        gap: 70px;
+    }
+    header ul li{
+        list-style-type: none;
+    }
+    header ul li a{
+        transition: 0.2s;
+    }
+    header ul li a:hover{
+        color: rgb(255, 89, 18);
+    }
+    header a{
+        text-decoration: none;
+        color: black;
+    }
+    .r_header{
+        display: flex;
+        gap: 12px;
+    }
+    /* Главный экран */
+    .sec1{
+        background-image: url("img/background.png");
+        background-position: 50%;
+        width: 100%;
+        height: 900px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    
+        display: flex;
+        align-items: center;
+    }
+    h1{
+        font-family: montserrat;
+        font-size: 60px;
+        font-weight: 550;
+        width: 950px;
+        color: #FFF;
+    }
+    .tittles p{
+        font-family: montserrat;
+        font-size: 35px;
+        font-weight: 400;
+        width: 863px;
+        color: #FFF;
+        line-height: 134%;
+        margin-top: 24px;
+    }
+    .tittles{
+        width: 960px;
+        margin: 0 auto;
+    }
+    .planka{
+        background-color: #FFF;
+        padding: 30px;
+    }
+    .planka_inside{
+        width: 960px;
+        margin: 0 auto;
+        display:  flex;
+        justify-content: space-between;
+    }
+    .planka_inside .text{
+        width: 250px;
+        font-family: montserrat;
+        font-size: 18px;
+        font-weight: 300;
+        color: #717171;
+    }
+    /* Класс для скрытия объектов */
+    .spec{
+        display: none;
+    }
+    /* Группы товаров */
+    .tovars{
+        width: 960px;
+        margin: 0 auto;
+    }
+    h2{
+        font-family: montserrat;
+        font-size: 32px;
+        font-weight: 400;
+        margin-top: 60px;
+    }
+    .cont_items{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    .item{
+        padding: 30px;
+        background-color: #FFF;
+        border-radius: 10px;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    .item:hover{
+        -webkit-box-shadow: 6px 6px 42px -14px rgba(0, 0, 0, 0.26);
+        -moz-box-shadow: 6px 6px 42px -14px rgba(0, 0, 0, 0.26);
+        box-shadow: 6px 6px 42px -14px rgba(0, 0, 0, 0.26);
+        color: rgb(255, 89, 18);
+    }
+    .img_item{
+        background-image: url("img/item1.png");
+        width: 243px;
+        height: 243px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+    }
+    .tittle_item{
+        font-family: montserrat;
+        font-size: 19px;
+        font-weight: 550;
+        margin-top: 18px;
+        text-transform: uppercase;
+        width: 243px;
+        color: #000 !important;
+    }
+    .price_item{
+        font-family: montserrat;
+        font-size: 20px;
+        font-weight: 550;
+        margin-top: 16px;
+        width: 243px;
+    }
+    .slide_buttons button{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: 1px solid #717171;
+        background-color: #FFF;
+        cursor: pointer;
+    }
+    .slide_buttons{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin: 28px auto 0 auto;
+        width: 100px;
+    }
+    .slide_buttons .active{
+        width: 10px;
+        height: 10px;
+        background-color: #717171;
+    }
+    .top, .bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+    .brand{
+        background-image: url("img/tnf.png");
+        width: 300px;
+        height: 137px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 60px;
+    }
+    /* Текст внизу */
+    .bottom_text{
+        margin-top: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom_text .text{
+        font-family: montserrat;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 156%;
+        color: #717171;
+    }
+    /* Футер */
+    .footer_cont{
+        width: 960px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .block_footer ul li{
+        list-style: none;
+        margin-bottom: 12px;
+    }
+    .block_footer a{
+        color: #000;
+        font-family: montserrat;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    footer{
+        margin-top: 60px;
+        background-color: #FFF;
+    }
+    .block_footer{
+        margin: 60px 0 44px 0;
+    }
+    .center a{
+        text-decoration: none;
+    }
+}
+/* Стили для экранов шириной больше 1281px */
+@media (min-width: 1281px){
+    .wrapper{
+        width: 1400px;
+        margin: 0 auto;
+    }
+    body{
+        background-color: #F9F9F9;
+    }
+    /* Хедер */
+    .fav{
+        background-image: url("img/fav.png");
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .cart{
+        background-image: url("img/bag.png");
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .profile{
+        background-image: url("img/profile.png");
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    header{
+        background-color: #FFF;
+    }
+    .head{
+        width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        font-family: Montserrat;
+        font-weight: 400;
+    }
+    .logo{
+        font-family: Montserrat;
+        font-weight: 550;
+        font-size: 20px;
+    }
+    header ul{
+        display: flex;
+        gap: 120px;
+    }
+    header ul li{
+        list-style-type: none;
+    }
+    header ul li a{
+        transition: 0.2s;
+    }
+    header ul li a:hover{
+        color: rgb(255, 89, 18);
+    }
+    header a{
+        text-decoration: none;
+        color: black;
+    }
+    .r_header{
+        display: flex;
+        gap: 12px;
+    }
+    .spec_wide{
+        display: none;
+    }
+    /* Главный экран */
+    .sec1{
+        background-image: url("img/background.png");
+        width: 100%;
+        height: 900px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    
+        display: flex;
+        align-items: center;
+    }
+    h1{
+        font-family: montserrat;
+        font-size: 60px;
+        font-weight: 550;
+        width: 950px;
+        color: #FFF;
+    }
+    .tittles p{
+        font-family: montserrat;
+        font-size: 35px;
+        font-weight: 400;
+        width: 863px;
+        color: #FFF;
+        line-height: 134%;
+        margin-top: 24px;
+    }
+    .tittles{
+        width: 1400px;
+        margin: 0 auto;
+    }
+    .planka{
+        background-color: #FFF;
+        padding: 30px;
+    }
+    .planka_inside{
+        width: 1400px;
+        margin: 0 auto;
+        display:  flex;
+        justify-content: space-between;
+    }
+    .planka_inside .text{
+        width: 240px;
+        font-family: montserrat;
+        font-size: 16px;
+        font-weight: 300;
+        color: #717171;
+    }
+    /* Группы товаров */
+    .tovars{
+        width: 1400px;
+        margin: 0 auto;
+    }
+    h2{
+        font-family: montserrat;
+        font-size: 40px;
+        font-weight: 400;
+        margin-top: 60px;
+    }
+    .cont_items{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    .item{
+        padding: 30px;
+        background-color: #FFF;
+        border-radius: 10px;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    .item:hover{
+        -webkit-box-shadow: 6px 6px 42px -14px rgba(0, 0, 0, 0.26);
+        -moz-box-shadow: 6px 6px 42px -14px rgba(0, 0, 0, 0.26);
+        box-shadow: 6px 6px 42px -14px rgba(0, 0, 0, 0.26);
+        color: rgb(255, 89, 18);
+    }
+    .img_item{
+        background-image: url("img/item1.png");
+        width: 273px;
+        height: 273px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+    }
+    .tittle_item{
+        font-family: montserrat;
+        font-size: 19px;
+        font-weight: 550;
+        margin-top: 18px;
+        text-transform: uppercase;
+        width: 273px;
+        color: #000 !important;
+    }
+    .price_item{
+        font-family: montserrat;
+        font-size: 20px;
+        font-weight: 550;
+        margin-top: 16px;
+        width: 273px;
+    }
+    .slide_buttons button{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: 1px solid #717171;
+        background-color: #FFF;
+        cursor: pointer;
+    }
+    .slide_buttons{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin: 28px auto 0 auto;
+        width: 100px;
+    }
+    .slide_buttons .active{
+        width: 10px;
+        height: 10px;
+        background-color: #717171;
+    }
+    .top, .bottom{
+        display: flex;
+        justify-content: space-between;
+    }
+    .brand{
+        background-image: url("img/tnf.png");
+        width: 300px;
+        height: 137px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 60px;
+    }
+    /* Текст внизу */
+    .bottom_text{
+        margin-top: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bottom_text .text{
+        font-family: montserrat;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 156%;
+        color: #717171;
+    }
+    /* Футер */
+    .footer_cont{
+        width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .block_footer ul li{
+        list-style: none;
+        margin-bottom: 12px;
+    }
+    .block_footer a{
+        color: #000;
+        font-family: montserrat;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    footer{
+        margin-top: 60px;
+        background-color: #FFF;
+    }
+    .block_footer{
+        margin: 60px 0 44px 0;
+    }
+    .center a{
+        text-decoration: none;
+    }
+}

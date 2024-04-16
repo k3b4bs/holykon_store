@@ -1,0 +1,47 @@
+.team{
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+.team_item{
+    width: 290px;
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 12px;
+    text-align: center;
+}
+.team_pic{
+    
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.team_name{
+    font-family: montserrat;
+    font-weight: 400;
+    margin-top: 12px;
+}
+.team_spec{
+    font-family: montserrat;
+    font-weight: 550;
+    margin-top: 8px;
+    font-size: 14px;
+}
+.m{
+    background-image: url('../img/person.avif');
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.w{
+    background-image: url("../img/personw.avif");
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sec2{
+    margin-bottom: 40px;
+}

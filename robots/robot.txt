@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /pages/edit.html
+Disallow: /img
+Disallow: /support
+Disallow: admin.html
+Disallow: *&
+Allow: error.html
+Disallow: www.holykonstore.ru
+Host: www.holykonstore.ru
+Sitemap: http://holykonstore.ru/sitemap.xml

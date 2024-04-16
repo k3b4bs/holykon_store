@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Элемент</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_item.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <a href="../index.html"><div class="logo">HOLYKON STORE</div></a>
+            <ul>
+                <li><a href="man.html">Мужское</a></li>
+                <li><a href="#">Женское</a></li>
+                <li><a href="#">Бренды</a></li>
+                <li><a href="news.html">Новости</a></li>
+            </ul>
+            <div class="r_header">
+                <a href="#"><div class="fav"></div></a>
+                <a href="#"><div class="cart"></div></a>
+                <a href="login.html"><div class="profile"></div></a>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <section>
+            <div class="cont">
+                <div class="tovar_img"></div>
+                <div class="right">
+                    <div class="tovar_name">Рубашка Stone Island SS '021 Naslan Light</div>
+                    <div class="tovar_price">18 990 рублей</div>
+                    <div class="tovar_size">XS <span>S</span> <span>M</span> L <span>XL</span> XXL</div>
+                    <select name="color" id="choosen_color">
+                        <option value="black">Черный</option>
+                        <option value="white">Белый</option>
+                        <option value="gray">Серый</option>
+                        <option value="orange">Оранжевый</option>
+                      </select>
+                    <div class="buttons">
+                        <button type="submit" class="to_cart">В корзину</button>
+                        <a href="#" class="to_fav_cont"><div class="to_fav"></div></a>
+                    </div>
+                    <div class="in_stock">
+                        <div class="in_stock_tittle">Наличие:</div>
+                        <div class="in_stock_value">Доступно в <span>1 магазине</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont_desc">
+                <div class="desc">
+                    <h2>О товаре</h2>
+                    <p>NASLAN LIGHT: Рубашка из легкой, прочной и устойчивой к истиранию ткани Naslan Light, состоящей из нейлона механического прядения. Нейлоновые нити пропариваются в процессе прядения, чтобы создать внешний вид, близкий к органическим волокнам. Одежда окрашена.</p>
+                    <div class="specs">
+                        <p>Состав: 100% Полиамид / Нейлон</p>
+                        <p>Страна производства: Румыния</p>
+                        <p>Артикул производителя: 7315116F4</p>
+                    </div>
+                </div>
+                <div class="info_ship">
+                    <h2>Информация</h2>
+                    <div class="tittle_p">Доставка</div>
+                    <div class="text_p">Бесплатная доставка по России при покупке от 20 000 ₽</div>
+                    <div class="link_p">Условия доставки</div>
+                    <div class="tittle_p s">Возврат</div>
+                    <div class="text_p">Вы можете вернуть неподошедший товар в течение 14 дней с даты получения</div>
+                    <div class="link_p">Условия возврата</div>
+                </div>
+            </div>
+            
+            <div class="reviews">
+                <h2>Отзывы</h2>
+                <div class="otzuv">
+                    <div class="otzuv_top">
+                        <div class="otzuv_name">Ольга</div>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">☆</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">☆</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">☆</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">☆</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">☆</label>
+                          </div>
+                    </div>
+                    <div class="otzuv_size">Размер: M</div>
+                    <div class="otzuv_text">Очень хорошо упаковано, швы аккуратные, сам логотип вышит, ткань довольно приятная, рекомендую!</div>
+                </div>
+                <div class="otzuv">
+                    <div class="otzuv_top">
+                        <div class="otzuv_name">Ольга</div>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">☆</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">☆</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">☆</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">☆</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">☆</label>
+                          </div>
+                    </div>
+                    <div class="otzuv_size">Размер: M</div>
+                    <div class="otzuv_text">Очень хорошо упаковано, швы аккуратные, сам логотип вышит, ткань довольно приятная, рекомендую!</div>
+                </div>
+                <div class="add_otzuv">
+                    <input type="text" class="name_otzuv" placeholder="Ваше имя">
+                    <input type="text" class="text_otzuv" placeholder="Текст отзыва">
+                    <div class="button_otzuv">
+                        <button type="submit">Добавить отзыв</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

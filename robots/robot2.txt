@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/image.png
+Disallow: /img/admin
+Disallow: /support
+Allow: index.html
+Allow: error.html
+Disallow: https://www.dns-shop.ru/

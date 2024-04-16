@@ -1,0 +1,88 @@
+
+h1{
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 8px;
+}
+h2{
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 550;
+    margin-top: 28px;
+    margin-bottom: 8px;
+}
+h3{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 550;
+    margin-top: 28px;
+    margin-bottom: 8px;
+}
+.button{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 550;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFF;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+    margin-bottom: 24px;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin-top: 24px;
+}
+.button:hover{
+    color: rgb(255, 89, 18);
+    -webkit-box-shadow: 6px 6px 20px -14px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 6px 6px 20px -14px rgba(0, 0, 0, 0.26);
+    box-shadow: 6px 6px 20px -14px rgba(0, 0, 0, 0.26);
+}
+.news{
+    margin-top: 32px;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+.big_image{
+    margin-top: 12px;
+    background-image: url("../../img/dance.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
+    border-radius: 10px;
+    background-position: 50% 100%;
+}
+.pictures{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.img1{
+    background-image: url("../../img/dance1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+}
+.img2{
+    background-image: url("../../img/dance2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+}
+.img3{
+    background-image: url("../../img/dance3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+}

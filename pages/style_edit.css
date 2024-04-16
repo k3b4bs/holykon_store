@@ -1,0 +1,102 @@
+*{
+    font-family: montserrat;
+}
+section{
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+h1{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+/* .add_photos{
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    width: 400px;
+    height: 80px;
+    border: 1px solid rgb(121, 121, 121);
+    margin-bottom: 12px;
+    text-align: center;
+}
+.add_photos span{
+    background-color: red;
+} */
+
+.add_photos {
+    /* Скрыть стандартную кнопку выбора файла */
+  }
+  
+  /* Стилизация фонового блока, чтобы он выглядел как кнопка */
+  .add_photos_label {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4CAF50; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Изменить вид курсора при наведении */
+  }
+.input_form{
+    width: 400px;
+}
+.input_form input{
+    width: 400px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 8px;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+}
+textarea{
+    width: 400px;
+    height: 120px;
+    resize: none;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+.sizes, .radio_btn, .select_pol{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+}
+ul{
+    gap: 10px;
+    margin-bottom: 12px;
+    display: flex;
+}
+.flex-inner li , .select_pol li{
+    display: flex;
+    align-items : center;
+}
+.flex-inner input, .select_pol input{
+    margin-right: 4px;
+    width: 20px;
+    height: 20px;
+}
+.flex-inner label, .select_pol label{
+    margin-right: 12px;
+}
+.select_pol{
+    margin-bottom: 12px;
+}
+.selector{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    padding: 8px;
+    width: 400px;
+}
+.selector option{
+    font-weight: 500;
+}

@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Bold.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-SemiBold.ttf");
+    font-weight: 550;
+}
+h2{
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 8px;
+}
+p{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    line-height: 140%;
+}
+body{
+    background-color: rgb(248, 248, 248);
+}
+.wrapper{
+    width: 1400px;
+    margin: 0 auto;
+}
+.fav{
+    background-image: url("../img/fav.png");
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cart{
+    background-image: url("../img/bag.png");
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.profile{
+    background-image: url("../img/profile.png");
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    background-color: #FFF;
+}
+.head{
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-family: Montserrat;
+    font-weight: 400;
+}
+.logo{
+    font-family: Montserrat;
+    font-weight: 550;
+    font-size: 20px;
+}
+header ul{
+    display: flex;
+    gap: 120px;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.r_header{
+    display: flex;
+    gap: 12px;
+}
+
+header ul li a{
+    transition: 0.2s;
+}
+header ul li a:hover{
+    color: rgb(255, 89, 18);
+}

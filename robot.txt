@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin
+Disallow: /img/admin
+Disallow: /support
+Disallow: index.html
+Disallow: *&
+Allow: error.html
+Disallow: www.holykonstore.ru
